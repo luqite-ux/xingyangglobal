@@ -3,6 +3,7 @@ import { Instrument_Sans, Schibsted_Grotesk } from 'next/font/google'
 import { SiteHeader } from '@/components/site/site-header'
 import { SiteFooter } from '@/components/site/site-footer'
 import { site } from '@/lib/site'
+import { JsonLd } from '@/components/seo/json-ld'
 import './globals.css'
 
 const display = Schibsted_Grotesk({ subsets: ['latin'], variable: '--font-display', display: 'swap' })
@@ -30,6 +31,28 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body>
+        <JsonLd data={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            '@id': `${site.url}/#organization`,
+            name: site.displayName,
+            url: site.url,
+            logo: `${site.url}/icon.svg`,
+            email: site.email,
+            telephone: site.phone,
+            address: { '@type': 'PostalAddress', addressLocality: 'Xingyang', addressRegion: 'Henan', addressCountry: 'CN' },
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            '@id': `${site.url}/#website`,
+            url: site.url,
+            name: site.displayName,
+            publisher: { '@id': `${site.url}/#organization` },
+            inLanguage: 'en',
+          },
+        ]} />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-ink focus:px-4 focus:py-3 focus:text-paper"

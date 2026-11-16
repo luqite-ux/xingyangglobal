@@ -13,6 +13,8 @@ import { TextLink } from '@/components/site/button-link'
 import { ProductGallery } from '@/components/products/product-gallery'
 import { SpecTables } from '@/components/products/spec-tables'
 import { RfqForm } from '@/components/rfq/rfq-form'
+import { JsonLd } from '@/components/seo/json-ld'
+import { site } from '@/lib/site'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -44,6 +46,28 @@ export default async function ProductDetailPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd data={[
+        {
+          '@context': 'https://schema.org',
+          '@type': 'Product',
+          '@id': `${site.url}${productHref(product.slug)}#product`,
+          name,
+          description: localize(product.summary),
+          image: product.images.map((image) => image.src.startsWith('http') ? image.src : `${site.url}${image.src}`),
+          url: `${site.url}${productHref(product.slug)}`,
+          manufacturer: { '@id': `${site.url}/#organization` },
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: site.url },
+            { '@type': 'ListItem', position: 2, name: 'Products', item: `${site.url}/products` },
+            ...(category ? [{ '@type': 'ListItem', position: 3, name: localize(category.name), item: `${site.url}${categoryHref(category.slug)}` }] : []),
+            { '@type': 'ListItem', position: category ? 4 : 3, name, item: `${site.url}${productHref(product.slug)}` },
+          ],
+        },
+      ]} />
       <PageHero
         eyebrow={category ? localize(category.name) : 'Product'}
         title={name}

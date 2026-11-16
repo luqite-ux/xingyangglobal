@@ -5,6 +5,8 @@ import { getPublishedArticles, getArticleBySlug } from '@/lib/articles-db'
 import { localize } from '@/lib/i18n'
 import { PageHero } from '@/components/site/page-hero'
 import { Section } from '@/components/site/section'
+import { JsonLd } from '@/components/seo/json-ld'
+import { site } from '@/lib/site'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -29,6 +31,28 @@ export default async function NewsArticlePage({ params }: Props) {
 
   return (
     <>
+      <JsonLd data={[
+        {
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          '@id': `${site.url}/news/${article.slug}#article`,
+          headline: localize(article.title),
+          description: localize(article.excerpt),
+          datePublished: article.publishedAt,
+          dateModified: article.publishedAt,
+          mainEntityOfPage: `${site.url}/news/${article.slug}`,
+          publisher: { '@id': `${site.url}/#organization` },
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: site.url },
+            { '@type': 'ListItem', position: 2, name: 'News', item: `${site.url}/news` },
+            { '@type': 'ListItem', position: 3, name: localize(article.title), item: `${site.url}/news/${article.slug}` },
+          ],
+        },
+      ]} />
       <PageHero
         eyebrow={article.publishedAt}
         title={localize(article.title)}
