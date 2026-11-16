@@ -14,8 +14,8 @@ export function ApplicationsSection() {
         id="applications"
         index="03"
         eyebrow="Applications"
-        title="Three processing domains, described the same way"
-        intro="Each domain lists the material you bring, what the machine is asked to do, and the families that usually apply."
+        title="Find equipment by material and processing task"
+        intro="Start with the material you handle, then compare the machine families and selection points relevant to that application."
       />
       <div className="mt-14 grid gap-px border border-ink/15 bg-ink/15 lg:grid-cols-3">
         {applications.map((application, index) => (

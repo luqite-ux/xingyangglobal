@@ -51,6 +51,7 @@ export type Product = {
 }
 
 const sheet = (src: string, alt: string, caption: string): ProductImage => ({ src, alt, kind: 'sheet', caption })
+const photo = (src: string, alt: string, caption: string): ProductImage => ({ src, alt, kind: 'photo', caption })
 
 export const categories: Category[] = [
   {
@@ -61,11 +62,7 @@ export const categories: Category[] = [
       'A broad grinding family covering a range of model sizes from 360 Type to 1000 Type, with catalogue parameters for motor speed, rated power and machine weight.',
     ),
     highlights: l(['360 to 1000 Type range', 'Single-head mold arrangement', 'Rated power listed per model']),
-    cover: sheet(
-      '/images/products/product-1.jpg',
-      'Product parameters table for the Multi-function Pulverizer range, models 360 Type to 1000 Type',
-      'Catalogue sheet',
-    ),
+    cover: photo('/images/products/category-pulverizer.jpg', 'Green multi-function pulverizer with cyclone separator', 'Multi-function pulverizer'),
     applications: ['agriculture', 'forestry'],
   },
   {
@@ -76,11 +73,7 @@ export const categories: Category[] = [
       'Pulverizers for buyers who need stainless contact or build variants. Model range and parameters follow the supplied catalogue sheet; confirm the exact build with us.',
     ),
     highlights: l(['360 to 1000 Type range', 'Stainless variants per catalogue', 'Build confirmed per inquiry']),
-    cover: sheet(
-      '/images/products/product-2.jpg',
-      'Product parameters table for the Stainless Steel Pulverizer range, models 360 Type to 1000 Type',
-      'Catalogue sheet',
-    ),
+    cover: photo('/images/products/category-stainless-pulverizer.jpg', 'Stainless steel pulverizer with cyclone separator and wheeled base', 'Stainless steel pulverizer'),
     applications: ['food-processing', 'agriculture'],
   },
   {
@@ -91,11 +84,7 @@ export const categories: Category[] = [
       'Crushers for wood and straw processing. The 420 Type sheet lists motor power, inlet sizes, blade count and hourly output, with replaceable screening mesh for output fineness.',
     ),
     highlights: l(['420 to 1000 Type range', 'Wood and straw inlets', 'Replaceable screening mesh']),
-    cover: sheet(
-      '/images/products/product-3.jpg',
-      '420 Type wood crusher specification sheet with model comparison from 420 Type to 1000 Type',
-      'Catalogue sheet',
-    ),
+    cover: photo('/images/products/category-wood-crusher.jpg', 'Green wood crusher with electric motor and feed inlet', 'Wood crusher'),
     applications: ['forestry', 'agriculture'],
   },
   {
@@ -106,11 +95,7 @@ export const categories: Category[] = [
       'Circulating-operation mixers in five hopper sizes, from 15 kg to 200 kg, with voltage, motor power, hopper dimensions and weight listed per model.',
     ),
     highlights: l(['15 / 30 / 50 / 100 / 200 kg models', '220 V and 380 V options', 'Batch mixing context']),
-    cover: sheet(
-      '/images/products/product-4.jpg',
-      'Product parameters table for Stainless Steel Mixers, 15 Type to 200 Type',
-      'Catalogue sheet',
-    ),
+    cover: photo('/images/products/category-mixer.jpg', 'Stainless steel mixer with screw conveyor and loading hopper', 'Stainless steel mixer'),
     applications: ['food-processing', 'agriculture'],
   },
   {
@@ -122,7 +107,7 @@ export const categories: Category[] = [
     ),
     highlights: l(['Motor-driven blower body', 'Control box with start/stop', 'Specifications on request']),
     cover: {
-      src: '/images/products/product-5.jpg',
+      src: '/images/products/category-fiber-filling.jpg',
       alt: 'Fiber filling machine with blue motor, white blower housing, control box and outlet pipe',
       kind: 'photo',
       caption: 'Product photo',
@@ -141,7 +126,7 @@ export const products: Product[] = [
       'The multi-function pulverizer family covers eight catalogue sizes. The supplied sheet lists overall size, motor speed, mold quantity, rated power and machine weight for each size.',
       'Choose a size by the material you grind, the output you expect and the power supply available at your site.',
     ]),
-    images: [categories[0].cover],
+    images: [categories[0].cover, sheet('/images/products/product-1.jpg', 'Product parameters table for the Multi-function Pulverizer range, models 360 Type to 1000 Type', 'Model parameter sheet')],
     specs: [
       {
         kind: 'matrix',
@@ -190,7 +175,7 @@ export const products: Product[] = [
       'The stainless steel pulverizer sheet lists the same eight model sizes with main and working motor power, mold quantity, rated power and weight.',
       'Which parts are stainless depends on the build you request, so please state your contact-material requirement in the inquiry.',
     ]),
-    images: [categories[1].cover],
+    images: [categories[1].cover, sheet('/images/products/product-2.jpg', 'Product parameters table for the Stainless Steel Pulverizer range, models 360 Type to 1000 Type', 'Model parameter sheet')],
     specs: [
       {
         kind: 'matrix',
@@ -239,7 +224,7 @@ export const products: Product[] = [
       'The 420 Type wood crusher is listed with separate wood and straw inlets, four blades and a three-phase 380 V rated voltage. A diesel model is noted on the sheet.',
       'The screening mesh can be replaced with different sizes according to customer requirements to adjust the fineness of the output. The sheet also compares 420 to 1000 Type.',
     ]),
-    images: [categories[2].cover],
+    images: [categories[2].cover, sheet('/images/products/product-3.jpg', '420 Type wood crusher specification sheet with model comparison from 420 Type to 1000 Type', 'Model parameter sheet')],
     specs: [
       {
         kind: 'pairs',
@@ -295,7 +280,7 @@ export const products: Product[] = [
       'Five mixer sizes are listed, from the 15 Type to the 200 Type. The two smaller sizes run on 220 V and the larger ones on 380 V, per the supplied sheet.',
       'The catalogue notes that data are measured manually and may deviate slightly; please refer to the actual product received.',
     ]),
-    images: [categories[3].cover],
+    images: [categories[3].cover, sheet('/images/products/product-4.jpg', 'Product parameters table for Stainless Steel Mixers, 15 Type to 200 Type', 'Model parameter sheet')],
     specs: [
       {
         kind: 'matrix',

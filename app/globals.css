@@ -143,23 +143,23 @@
 }
 
 .hero-pos-1 {
-  object-position: 80% 50%;
+  object-position: 72% 50%;
 }
 .hero-pos-2 {
-  object-position: 18% 50%;
+  object-position: 28% 50%;
 }
 .hero-pos-3 {
-  object-position: 92% 50%;
+  object-position: 72% 50%;
 }
 @media (min-width: 1024px) {
   .hero-pos-1 {
-    object-position: 88% 50%;
+    object-position: 76% 50%;
   }
   .hero-pos-2 {
-    object-position: 12% 50%;
+    object-position: 30% 50%;
   }
   .hero-pos-3 {
-    object-position: 94% 50%;
+    object-position: 76% 50%;
   }
 }
 

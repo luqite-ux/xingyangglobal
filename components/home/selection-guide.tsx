@@ -44,7 +44,7 @@ export function SelectionGuide() {
         index="02"
         eyebrow="Selection guide"
         title="Choose a model from five questions about your material"
-        intro="No performance figures are promised here. Each answer narrows the catalogue so the model we suggest matches your actual job."
+        intro="Material, output, batch size, power supply and contact requirements narrow the catalogue to the right model range."
       />
       <Reveal className="mt-14 border-t border-ink/30">
         <table className="w-full border-collapse text-left">

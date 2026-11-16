@@ -39,7 +39,7 @@ export function WorkflowSection() {
         index="05"
         eyebrow="Order workflow"
         title="From inquiry to pre-shipment inspection"
-        intro="A neutral outline of the four stages an order moves through. It describes the order of work, not a schedule."
+        intro="A clear four-stage path for confirming requirements, scheduling production and checking the finished machine before shipment."
       />
       <div className="relative">
         <ProcessPath className="inset-x-0 top-0 hidden h-24 lg:block" />

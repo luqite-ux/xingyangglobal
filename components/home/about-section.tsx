@@ -28,9 +28,8 @@ export function AboutSection() {
             <dd lang="zh-Hans" className="mt-1 font-display text-2xl font-semibold text-ink">{site.legalNameZh}</dd>
           </div>
           <div>
-            <dt className="eyebrow !text-[0.68rem]">English display name</dt>
+            <dt className="eyebrow !text-[0.68rem]">Company name</dt>
             <dd className="mt-1 text-ink">{site.displayName}</dd>
-            <dd className="mt-1 text-xs text-muted-foreground">A direct translation for display, not a registered English name.</dd>
           </div>
           <div>
             <dt className="eyebrow !text-[0.68rem]">Address</dt>

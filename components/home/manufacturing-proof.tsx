@@ -2,7 +2,7 @@ import { CalendarDays, Factory, Gauge, Route, Ruler, Warehouse, type LucideIcon 
 import { site } from '@/lib/site'
 import { Section, SectionHeading } from '@/components/site/section'
 import { Reveal } from '@/components/site/reveal'
-import { SitePlanDiagram } from '@/components/site/site-plan-diagram'
+import { FactoryGallery } from '@/components/site/factory-gallery'
 import { TextLink } from '@/components/site/button-link'
 
 export const manufacturingFacts: { icon: LucideIcon; value: string; label: string; note: string }[] = [
@@ -11,7 +11,7 @@ export const manufacturingFacts: { icon: LucideIcon; value: string; label: strin
   { icon: Factory, value: String(site.facts.workshops), label: 'Workshops', note: 'Two production workshops' },
   { icon: Warehouse, value: String(site.facts.warehouses), label: 'Warehouses', note: 'Three storage warehouses' },
   { icon: Route, value: '2 line types', label: 'Production lines', note: 'One automated, one customized' },
-  { icon: Gauge, value: site.facts.monthlyCapacity, label: 'Stated capacity', note: 'Per month, as stated by the factory' },
+  { icon: Gauge, value: site.facts.monthlyCapacity, label: 'Monthly capacity', note: 'Production capacity per month' },
 ]
 
 export function ManufacturingProof() {
@@ -21,12 +21,12 @@ export function ManufacturingProof() {
         id="manufacturing-proof"
         index="04"
         eyebrow="Manufacturing"
-        title="A working site in Gaocun, with the figures we can state"
-        intro="These are the verified facility facts. The schematic is illustrative and not to scale; it is not a photograph or floor plan."
+        title="Inside the Gaocun manufacturing site"
+        intro="See the production space and equipment inventory, alongside the site figures buyers need for supplier evaluation."
       />
       <div className="mt-14 grid gap-12 lg:grid-cols-12">
         <Reveal className="lg:col-span-5">
-          <SitePlanDiagram />
+          <FactoryGallery />
         </Reveal>
         <dl className="grid gap-px border border-ink/15 bg-ink/15 sm:grid-cols-2 lg:col-span-7">
           {manufacturingFacts.map(({ icon: Icon, value, label, note }, index) => (

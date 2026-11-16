@@ -13,10 +13,10 @@ export function FinalRfq() {
             <span className="text-ember tabular-nums">09</span> &nbsp; Request a quote
           </p>
           <h2 id="final-rfq-title" className="mt-4 text-[clamp(2rem,4.4vw,3.75rem)] font-semibold leading-[1.02]">
-            Tell us the material. We will suggest the machine.
+            Tell us what you process — we will help select the machine.
           </h2>
           <p className="mt-5 max-w-xl text-lg text-muted-foreground">
-            Minimum order is one machine. Describe your task and our team replies with a model suggestion to review.
+            Minimum order is one machine. Share the material, target output and power supply to receive a model recommendation.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/contact" variant="ember">Request a quote</ButtonLink>

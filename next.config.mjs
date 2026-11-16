@@ -2,6 +2,7 @@
 const nextConfig = {
   images: {
     unoptimized: true,
+    qualities: [75, 82, 85, 90],
   },
   async rewrites() {
     const adminUrl = process.env.NEXT_PUBLIC_ADMIN_URL?.trim().replace(/[\r\n]/g, '').replace(/\/$/, '')

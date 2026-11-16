@@ -66,8 +66,8 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-ink/10">
         <div className="container-wide flex flex-col gap-2 py-5 text-xs text-muted-foreground md:flex-row md:justify-between">
-          <p>© {new Date().getFullYear()} {site.displayName}. Minimum order: one machine.</p>
-          <p>English display name is a direct translation of the Chinese legal name.</p>
+          <p>© {new Date().getFullYear()} {site.displayName.replace(/[.;:!?；。：！？\s]+$/u, '')}. All rights reserved.</p>
+          <p>Minimum order: one machine.</p>
         </div>
       </div>
     </footer>

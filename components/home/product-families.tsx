@@ -11,8 +11,8 @@ export function ProductFamilies() {
         id="product-families"
         index="01"
         eyebrow="Product families"
-        title="Five equipment families, each with its own catalogue page"
-        intro="Every card opens a filtered catalogue for that family. Images show the supplied catalogue sheets and product photos in full."
+        title="Compare five equipment families by process"
+        intro="Compare the five equipment families by machine type and application. Open a family to review models, specifications and selection notes."
       />
       <ul className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-6">
         {categories.map((category, index) => (

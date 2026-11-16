@@ -40,7 +40,7 @@ export default async function ProductsPage({ searchParams }: Props) {
         intro={
           active
             ? localize(active.description)
-            : 'Grinding, crushing, mixing and filling equipment. Pick a family, review the supplied catalogue data, then send your material and output so we can confirm a model.'
+            : 'Browse grinding, crushing, mixing and filling equipment by family. Compare model parameters, applications and selection points before sending an inquiry.'
         }
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Products', href: active ? '/products' : undefined }, ...(active ? [{ label: localize(active.name) }] : [])]}
       >
@@ -90,11 +90,6 @@ export default async function ProductsPage({ searchParams }: Props) {
           </ul>
         ) : null}
 
-        {!active ? (
-          <p className="mt-10 max-w-2xl text-sm text-muted-foreground">
-            Catalogue images shown are representative samples. More models and photos will be added as product data is reviewed.
-          </p>
-        ) : null}
       </Section>
     </>
   )

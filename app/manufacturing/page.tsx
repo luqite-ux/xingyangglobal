@@ -5,7 +5,7 @@ import { PageHero } from '@/components/site/page-hero'
 import { Section, SectionHeading } from '@/components/site/section'
 import { Reveal } from '@/components/site/reveal'
 import { ButtonLink } from '@/components/site/button-link'
-import { SitePlanDiagram } from '@/components/site/site-plan-diagram'
+import { FactoryGallery } from '@/components/site/factory-gallery'
 import { manufacturingFacts } from '@/components/home/manufacturing-proof'
 import { WorkflowSteps } from '@/components/home/workflow-section'
 
@@ -22,17 +22,17 @@ export default function ManufacturingPage() {
       <PageHero
         eyebrow="Manufacturing"
         title="The facility facts behind the catalogue"
-        intro={`Based in ${site.address}. The figures below are the ones we can state; capacity is the factory's own stated figure.`}
+        intro={`Based in ${site.address}, with two workshops, three warehouses and dedicated lines for standard and customized equipment.`}
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Manufacturing' }]}
       >
         <ButtonLink href="/contact">Discuss your order</ButtonLink>
       </PageHero>
 
       <Section id="facts" className="!border-t-0">
-        <SectionHeading id="facts" eyebrow="Verified facts" title="Site, workshops and lines" intro="The schematic is illustrative and not to scale. It is not a photograph or floor plan." />
+        <SectionHeading id="facts" eyebrow="Factory overview" title="Production space, equipment and facility facts" intro="A view of the factory, product inventory and the site figures relevant to order planning." />
         <div className="mt-14 grid gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
-            <SitePlanDiagram />
+            <FactoryGallery />
           </Reveal>
           <dl className="grid gap-px border border-ink/15 bg-ink/15 sm:grid-cols-2 lg:col-span-7">
             {manufacturingFacts.map(({ icon: Icon, value, label, note }, index) => (

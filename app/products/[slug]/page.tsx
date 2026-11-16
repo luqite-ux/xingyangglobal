@@ -119,8 +119,8 @@ export default async function ProductDetailPage({ params }: Props) {
           {product.specsPending ? (
             <p className="mt-3 max-w-2xl text-muted-foreground">
               {product.specs.length
-                ? 'Verified catalogue parameters are shown below where supplied.'
-                : 'Structured specifications are not published for this product yet. Send your requirements and we will confirm suitability.'}
+                ? 'Available model parameters are shown below.'
+                : 'Send your material, output and power requirements so we can confirm the suitable configuration.'}
             </p>
           ) : null}
         </Reveal>

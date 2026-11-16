@@ -31,10 +31,10 @@ export default function AboutPage() {
         <div className="grid gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
             <h2 id="identity-title" className="text-3xl font-semibold">
-              Company identity
+              Company profile
             </h2>
             <p className="mt-4 text-muted-foreground">
-              The English name used on this site is a direct translation of the registered Chinese name. It is not a claim of an officially registered English name.
+              Xingyang City Flour Machinery Manufacturing Factory has produced grinding, crushing, mixing and filling equipment in Gaocun, Xingyang since 2002.
             </p>
           </Reveal>
           <Reveal className="lg:col-span-7" delay={1}>
