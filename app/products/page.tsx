@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { buildMetadata } from '@/lib/metadata'
-import { categories, getCategory, categoryHref, type Product } from '@/lib/products'
+import { categories, getCategory, categoryHref, productHref, type Product } from '@/lib/products'
 import { getProducts } from '@/lib/products-db'
 import { localize } from '@/lib/i18n'
 import { PageHero } from '@/components/site/page-hero'
@@ -81,11 +81,19 @@ export default async function ProductsPage({ searchParams }: Props) {
               </Reveal>
             ))}
             {!active
-              ? categories.map((c, i) => (
-                  <Reveal as="li" key={c.slug} delay={i % 3}>
-                    <CategoryCard category={c} index={i} />
-                  </Reveal>
-                ))
+              ? categories.map((c, i) => {
+                  const product = allProducts.find((item) => item.categorySlug === c.slug)
+                  return (
+                    <Reveal as="li" key={c.slug} delay={i % 3}>
+                      <CategoryCard
+                        category={c}
+                        index={i}
+                        href={product ? productHref(product.slug) : categoryHref(c.slug)}
+                        directToProduct={Boolean(product)}
+                      />
+                    </Reveal>
+                  )
+                })
               : null}
           </ul>
         ) : null}

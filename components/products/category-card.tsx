@@ -11,13 +11,22 @@ type CategoryCardProps = {
   index: number
   className?: string
   sizes?: string
+  href?: string
+  directToProduct?: boolean
 }
 
-export function CategoryCard({ category, index, className, sizes = '(min-width: 1024px) 33vw, 100vw' }: CategoryCardProps) {
+export function CategoryCard({
+  category,
+  index,
+  className,
+  sizes = '(min-width: 1024px) 33vw, 100vw',
+  href = categoryHref(category.slug),
+  directToProduct = false,
+}: CategoryCardProps) {
   const name = localize(category.name)
   return (
     <Link
-      href={categoryHref(category.slug)}
+      href={href}
       className={cn(
         'group relative flex h-full flex-col border border-ink/15 bg-paper transition-[border-color,box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:border-ink/50 hover:shadow-[0_22px_40px_-28px_rgba(18,48,63,0.55)] active:translate-y-0',
         className,
@@ -48,7 +57,7 @@ export function CategoryCard({ category, index, className, sizes = '(min-width: 
             ))}
         </ul>
         <span className="mt-4 inline-flex min-h-11 items-center gap-1.5 font-display text-sm font-semibold text-ink group-hover:text-ember-text">
-          Explore {name}
+          {directToProduct ? 'View details' : `Explore ${name}`}
           <ArrowUpRight className="size-4 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
         </span>
       </div>
