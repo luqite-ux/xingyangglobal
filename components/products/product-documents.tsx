@@ -53,25 +53,25 @@ function WoodCrusherInstructions() {
         </div>
         <div className="mt-10 border-t border-ink/15 pt-8">
           <h5 className="font-display text-xl font-semibold text-ink">Installation and trial operation</h5>
-          <ol className="mt-5 space-y-3 text-sm leading-7 text-muted-foreground sm:text-base">
-            {installationSteps.map((step, index) => (
-              <li key={step} className="grid grid-cols-[2rem_1fr] gap-2">
-                <span className="font-display font-semibold text-ember-text">{String(index + 1).padStart(2, '0')}</span>
+          <ul className="mt-5 space-y-3 text-sm leading-7 text-muted-foreground sm:text-base">
+            {installationSteps.map((step) => (
+              <li key={step} className="grid grid-cols-[0.75rem_1fr] gap-3">
+                <span aria-hidden="true" className="mt-[0.7rem] h-1.5 w-1.5 bg-ember-text" />
                 <span>{step}</span>
               </li>
             ))}
-          </ol>
+          </ul>
         </div>
         <div className="mt-10 border-t border-ink/15 pt-8">
           <h5 className="font-display text-xl font-semibold text-ink">Maintenance</h5>
-          <ol className="mt-5 space-y-3 text-sm leading-7 text-muted-foreground sm:text-base">
-            {maintenanceSteps.map((step, index) => (
-              <li key={step} className="grid grid-cols-[2rem_1fr] gap-2">
-                <span className="font-display font-semibold text-ember-text">{String(index + 1).padStart(2, '0')}</span>
+          <ul className="mt-5 space-y-3 text-sm leading-7 text-muted-foreground sm:text-base">
+            {maintenanceSteps.map((step) => (
+              <li key={step} className="grid grid-cols-[0.75rem_1fr] gap-3">
+                <span aria-hidden="true" className="mt-[0.7rem] h-1.5 w-1.5 bg-ember-text" />
                 <span>{step}</span>
               </li>
             ))}
-          </ol>
+          </ul>
         </div>
         <div className="mt-10 border-t border-ink/15 pt-8">
           <h5 className="font-display text-xl font-semibold text-ink">Technical support</h5>
@@ -101,8 +101,11 @@ export function ProductDocuments({ documents, productSlug }: { documents: Produc
         </p>
       </div>
       <div className="mx-auto mt-10 max-w-[62rem] overflow-hidden bg-white">
-        {visibleDocuments.map((document) => (
-          <div key={document.src}>
+        {visibleDocuments.map((document) => {
+          const cropTrailingWhitespace = isWoodCrusher && document.caption === 'Application range 2'
+
+          return (
+          <div key={document.src} className={cropTrailingWhitespace ? 'relative aspect-[79/38] overflow-hidden bg-white' : undefined}>
             <Image
               src={document.src}
               alt={document.alt}
@@ -110,10 +113,11 @@ export function ProductDocuments({ documents, productSlug }: { documents: Produc
               height={document.height ?? 2000}
               quality={90}
               sizes="(min-width: 1024px) 62rem, 100vw"
-              className="h-auto w-full bg-white object-contain"
+              className={cropTrailingWhitespace ? 'absolute inset-x-0 top-0 h-auto w-full bg-white' : 'h-auto w-full bg-white object-contain'}
             />
           </div>
-        ))}
+          )
+        })}
         {isWoodCrusher ? <WoodCrusherInstructions /> : null}
       </div>
     </div>
