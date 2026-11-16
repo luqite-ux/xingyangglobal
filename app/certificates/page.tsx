@@ -8,7 +8,7 @@ import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTi
 
 export const metadata: Metadata = buildMetadata({
   title: 'Certificates',
-  description: 'Verified certificate records will be listed here once documents are available.',
+  description: 'Certificate documents will be listed here when available.',
   path: '/certificates',
   noindex: true,
 })
@@ -22,7 +22,7 @@ export default function CertificatesPage() {
       <PageHero
         eyebrow="Certificates"
         title="Certificates"
-        intro="Verified documents will appear here."
+        intro="Certificate documents will appear here when available."
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Certificates' }]}
       />
       <Section id="records" labelledBy="records-title" className="!border-t-0">
@@ -36,7 +36,7 @@ export default function CertificatesPage() {
                 <FileCheck aria-hidden="true" />
               </EmptyMedia>
               <EmptyTitle>No certificate records yet</EmptyTitle>
-              <EmptyDescription>Nothing is published here until verified documents are supplied.</EmptyDescription>
+              <EmptyDescription>No certificate documents are currently published.</EmptyDescription>
             </EmptyHeader>
             <EmptyContent>
               <ButtonLink href="/contact">Ask us a question</ButtonLink>

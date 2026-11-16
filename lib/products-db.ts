@@ -19,7 +19,12 @@ type ProductRow = {
 function overlay(row: ProductRow): Product | null {
   const fallback = fallbackProducts.find((product) => product.slug === row.slug)
   if (!fallback) return null
-  const urls = row.extra_data?.images?.filter(Boolean) ?? (row.image_url ? [row.image_url] : [])
+  const databaseUrls = row.extra_data?.images?.filter(Boolean) ?? (row.image_url ? [row.image_url] : [])
+  // Keep a clear machine photograph as the lead image. Catalogue sheets remain in the
+  // gallery for reference, but database upload order must not turn one into the cover.
+  const urls = [fallback.images[0]?.src, ...databaseUrls].filter(
+    (src, index, all): src is string => Boolean(src) && all.indexOf(src) === index,
+  )
   const images: ProductImage[] = urls.length
     ? urls.map((src, index) => ({ src, alt: `${row.name_i18n?.en || row.name || fallback.name.en} — image ${index + 1}`, kind: 'photo', caption: index === 0 ? 'Product image' : `Gallery image ${index + 1}` }))
     : fallback.images

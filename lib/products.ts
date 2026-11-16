@@ -70,7 +70,7 @@ export const categories: Category[] = [
     name: l('Stainless Steel Pulverizers'),
     tagline: l('Stainless contact and build variants'),
     description: l(
-      'Pulverizers for buyers who need stainless contact or build variants. Model range and parameters follow the supplied catalogue sheet; confirm the exact build with us.',
+      'Pulverizers for buyers who need stainless contact or build variants. Compare the model range and parameters, then confirm the exact build with us.',
     ),
     highlights: l(['360 to 1000 Type range', 'Stainless variants per catalogue', 'Build confirmed per inquiry']),
     cover: photo('/images/products/category-stainless-pulverizer.jpg', 'Stainless steel pulverizer with cyclone separator and wheeled base', 'Stainless steel pulverizer'),
@@ -103,7 +103,7 @@ export const categories: Category[] = [
     name: l('Fiber Filling Machines'),
     tagline: l('Image-supported identity'),
     description: l(
-      'Fiber filling machine shown in the supplied product photo. Structured specifications are not published yet; send your fill material and output needs and we will confirm the match.',
+      'A motor-driven fiber filling machine for buyers who need help matching fill material, output and pipe arrangement to a suitable build.',
     ),
     highlights: l(['Motor-driven blower body', 'Control box with start/stop', 'Specifications on request']),
     cover: {
@@ -123,7 +123,7 @@ export const products: Product[] = [
     name: l('Multi-function Pulverizer, 360 – 1000 Type'),
     summary: l('Grinding family with eight catalogue sizes from 360 Type to 1000 Type.'),
     overview: l([
-      'The multi-function pulverizer family covers eight catalogue sizes. The supplied sheet lists overall size, motor speed, mold quantity, rated power and machine weight for each size.',
+      'The multi-function pulverizer family covers eight catalogue sizes, with overall size, motor speed, mold quantity, rated power and machine weight listed for comparison.',
       'Choose a size by the material you grind, the output you expect and the power supply available at your site.',
     ]),
     images: [categories[0].cover, sheet('/images/products/product-1.jpg', 'Product parameters table for the Multi-function Pulverizer range, models 360 Type to 1000 Type', 'Model parameter sheet')],
@@ -277,7 +277,7 @@ export const products: Product[] = [
     name: l('Stainless Steel Mixer, 15 – 200 Type'),
     summary: l('Circulating-operation mixer in five hopper sizes from 15 kg to 200 kg.'),
     overview: l([
-      'Five mixer sizes are listed, from the 15 Type to the 200 Type. The two smaller sizes run on 220 V and the larger ones on 380 V, per the supplied sheet.',
+      'Five mixer sizes are listed, from the 15 Type to the 200 Type. The smaller sizes include 220 V options, while the 100 and 200 Type are listed at 380 V.',
       'The catalogue notes that data are measured manually and may deviate slightly; please refer to the actual product received.',
     ]),
     images: [categories[3].cover, sheet('/images/products/product-4.jpg', 'Product parameters table for Stainless Steel Mixers, 15 Type to 200 Type', 'Model parameter sheet')],
@@ -319,7 +319,7 @@ export const products: Product[] = [
     name: l('Fiber Filling Machine'),
     summary: l('Motor-driven fiber filling machine, specifications confirmed per inquiry.'),
     overview: l([
-      'The supplied photo shows a motor-driven machine with a white blower housing, a control box with start and stop buttons, a flexible inlet hose and an outlet pipe.',
+      'The machine has a motor-driven blower body, a control box with start and stop buttons, a flexible inlet hose and an outlet pipe.',
       'No structured specifications are published for this family yet. Send your fill material and output needs and we will confirm suitability.',
     ]),
     images: [categories[4].cover],

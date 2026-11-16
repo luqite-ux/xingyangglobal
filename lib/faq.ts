@@ -19,7 +19,7 @@ export const faqs: FaqItem[] = [
     id: 'voltage',
     question: l('Which voltage do the machines use?'),
     answer: l(
-      'It depends on the model. For example, the supplied mixer sheet lists 220 V for the 15, 30 and 50 Type and 380 V for the 100 and 200 Type, and the 420 Type wood crusher is listed at three-phase 380 V. Tell us your local supply when you inquire.',
+      'It depends on the model. Mixer options include 220 V for the 15, 30 and 50 Type and 380 V for the 100 and 200 Type; the 420 Type wood crusher is listed at three-phase 380 V. Tell us your local supply when you inquire.',
     ),
   },
   {

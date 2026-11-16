@@ -12,7 +12,7 @@ import { WorkflowSteps } from '@/components/home/workflow-section'
 export const metadata: Metadata = buildMetadata({
   title: 'Manufacturing | Site, Capacity and Order Workflow',
   description:
-    'Verified facility facts for Xingyang: founded 2002, 3,000 m² site, two workshops, three warehouses, one automated and one customized line, 300 units per month stated capacity.',
+    'Xingyang manufacturing site: founded in 2002, with a 3,000 m² site, two workshops, three warehouses, automated and customized production lines, and listed monthly capacity of 300 units.',
   path: '/manufacturing',
 })
 

@@ -8,7 +8,7 @@ import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTi
 
 export const metadata: Metadata = buildMetadata({
   title: 'Cases',
-  description: 'Verified project cases will be listed here once records are available.',
+  description: 'Project cases will be listed here when available.',
   path: '/cases',
   noindex: true,
 })
@@ -19,7 +19,7 @@ const cases: never[] = []
 export default function CasesPage() {
   return (
     <>
-      <PageHero eyebrow="Cases" title="Cases" intro="Verified project records will appear here." crumbs={[{ label: 'Home', href: '/' }, { label: 'Cases' }]} />
+      <PageHero eyebrow="Cases" title="Cases" intro="Project records will appear here when available." crumbs={[{ label: 'Home', href: '/' }, { label: 'Cases' }]} />
       <Section id="records" labelledBy="records-title" className="!border-t-0">
         <h2 id="records-title" className="sr-only">
           Case records
@@ -31,7 +31,7 @@ export default function CasesPage() {
                 <Briefcase aria-hidden="true" />
               </EmptyMedia>
               <EmptyTitle>No case records yet</EmptyTitle>
-              <EmptyDescription>Nothing is published here until verified records are supplied.</EmptyDescription>
+              <EmptyDescription>No project cases are currently published.</EmptyDescription>
             </EmptyHeader>
             <EmptyContent>
               <ButtonLink href="/products">Browse products</ButtonLink>

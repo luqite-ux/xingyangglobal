@@ -25,24 +25,26 @@ export function ProductGallery({ images }: { images: ProductImage[] }) {
       </div>
       <p className="eyebrow !text-[0.68rem]">{current.caption}</p>
       {images.length > 1 ? (
-        <ul className="flex gap-3" aria-label="Product images">
-          {images.map((image, index) => (
-            <li key={image.src}>
-              <button
-                type="button"
-                onClick={() => setActive(index)}
-                aria-label={`Show image ${index + 1}: ${image.caption}`}
-                aria-pressed={index === active}
-                className={cn(
-                  'relative size-20 border bg-paper-deep/60 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ember',
-                  index === active ? 'border-ink' : 'border-ink/20 hover:border-ink/60',
-                )}
-              >
-                <Image src={image.src} alt="" fill sizes="80px" className="product-image object-contain p-1" />
-              </button>
-            </li>
-          ))}
-        </ul>
+        <div className="max-w-full overflow-x-auto pb-2" role="region" aria-label="Product image thumbnails" tabIndex={0}>
+          <ul className="flex w-max gap-3" aria-label="Product images">
+            {images.map((image, index) => (
+              <li key={image.src}>
+                <button
+                  type="button"
+                  onClick={() => setActive(index)}
+                  aria-label={`Show image ${index + 1}: ${image.caption}`}
+                  aria-pressed={index === active}
+                  className={cn(
+                    'relative size-20 border bg-paper-deep/60 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ember',
+                    index === active ? 'border-ink' : 'border-ink/20 hover:border-ink/60',
+                  )}
+                >
+                  <Image src={image.src} alt="" fill sizes="80px" className="product-image object-contain p-1" />
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
       ) : null}
     </div>
   )
