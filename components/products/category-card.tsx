@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
 import { categoryHref, type Category } from '@/lib/products'
 import { localize } from '@/lib/i18n'
@@ -25,7 +24,7 @@ export function CategoryCard({
 }: CategoryCardProps) {
   const name = localize(category.name)
   return (
-    <Link
+    <a
       href={href}
       className={cn(
         'group relative flex h-full flex-col border border-ink/15 bg-paper transition-[border-color,box-shadow,transform] duration-300 hover:-translate-y-0.5 hover:border-ink/50 hover:shadow-[0_22px_40px_-28px_rgba(18,48,63,0.55)] active:translate-y-0',
@@ -61,6 +60,6 @@ export function CategoryCard({
           <ArrowUpRight className="size-4 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
         </span>
       </div>
-    </Link>
+    </a>
   )
 }
