@@ -45,6 +45,7 @@ export type Product = {
   summary: Localized
   overview: Localized<string[]>
   images: ProductImage[]
+  documents: ProductImage[]
   specs: SpecGroup[]
   specsPending: boolean
   selectionNotes: Localized<string[]>
@@ -126,7 +127,8 @@ export const products: Product[] = [
       'The multi-function pulverizer family covers eight catalogue sizes, with overall size, motor speed, mold quantity, rated power and machine weight listed for comparison.',
       'Choose a size by the material you grind, the output you expect and the power supply available at your site.',
     ]),
-    images: [categories[0].cover, sheet('/images/products/product-1.jpg', 'Product parameters table for the Multi-function Pulverizer range, models 360 Type to 1000 Type', 'Model parameter sheet')],
+    images: [categories[0].cover],
+    documents: [sheet('/images/products/product-1.jpg', 'Product parameters table for the Multi-function Pulverizer range, models 360 Type to 1000 Type', 'Model parameter sheet')],
     specs: [
       {
         kind: 'matrix',
@@ -175,7 +177,8 @@ export const products: Product[] = [
       'The stainless steel pulverizer sheet lists the same eight model sizes with main and working motor power, mold quantity, rated power and weight.',
       'Which parts are stainless depends on the build you request, so please state your contact-material requirement in the inquiry.',
     ]),
-    images: [categories[1].cover, sheet('/images/products/product-2.jpg', 'Product parameters table for the Stainless Steel Pulverizer range, models 360 Type to 1000 Type', 'Model parameter sheet')],
+    images: [categories[1].cover],
+    documents: [sheet('/images/products/product-2.jpg', 'Product parameters table for the Stainless Steel Pulverizer range, models 360 Type to 1000 Type', 'Model parameter sheet')],
     specs: [
       {
         kind: 'matrix',
@@ -224,7 +227,8 @@ export const products: Product[] = [
       'The 420 Type wood crusher is listed with separate wood and straw inlets, four blades and a three-phase 380 V rated voltage. A diesel model is noted on the sheet.',
       'The screening mesh can be replaced with different sizes according to customer requirements to adjust the fineness of the output. The sheet also compares 420 to 1000 Type.',
     ]),
-    images: [categories[2].cover, sheet('/images/products/product-3.jpg', '420 Type wood crusher specification sheet with model comparison from 420 Type to 1000 Type', 'Model parameter sheet')],
+    images: [categories[2].cover],
+    documents: [sheet('/images/products/product-3.jpg', '420 Type wood crusher specification sheet with model comparison from 420 Type to 1000 Type', 'Model parameter sheet')],
     specs: [
       {
         kind: 'pairs',
@@ -280,7 +284,8 @@ export const products: Product[] = [
       'Five mixer sizes are listed, from the 15 Type to the 200 Type. The smaller sizes include 220 V options, while the 100 and 200 Type are listed at 380 V.',
       'The catalogue notes that data are measured manually and may deviate slightly; please refer to the actual product received.',
     ]),
-    images: [categories[3].cover, sheet('/images/products/product-4.jpg', 'Product parameters table for Stainless Steel Mixers, 15 Type to 200 Type', 'Model parameter sheet')],
+    images: [categories[3].cover],
+    documents: [sheet('/images/products/product-4.jpg', 'Product parameters table for Stainless Steel Mixers, 15 Type to 200 Type', 'Model parameter sheet')],
     specs: [
       {
         kind: 'matrix',
@@ -323,6 +328,7 @@ export const products: Product[] = [
       'No structured specifications are published for this family yet. Send your fill material and output needs and we will confirm suitability.',
     ]),
     images: [categories[4].cover],
+    documents: [],
     specs: [],
     specsPending: true,
     selectionNotes: l([

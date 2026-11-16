@@ -12,6 +12,7 @@ import { Reveal } from '@/components/site/reveal'
 import { TextLink } from '@/components/site/button-link'
 import { ProductGallery } from '@/components/products/product-gallery'
 import { SpecTables } from '@/components/products/spec-tables'
+import { ProductDocuments } from '@/components/products/product-documents'
 import { RfqForm } from '@/components/rfq/rfq-form'
 import { JsonLd } from '@/components/seo/json-ld'
 import { site } from '@/lib/site'
@@ -129,6 +130,9 @@ export default async function ProductDetailPage({ params }: Props) {
             <SpecTables groups={product.specs} />
           </Reveal>
         ) : null}
+        <Reveal delay={2}>
+          <ProductDocuments documents={product.documents} />
+        </Reveal>
       </Section>
 
       <Section id="applications-fit">
