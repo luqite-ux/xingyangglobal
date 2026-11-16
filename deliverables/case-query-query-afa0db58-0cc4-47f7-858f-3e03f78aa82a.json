@@ -1,0 +1,50 @@
+{
+  "context": {
+    "projectId": "project-cdf38930-5f9d-42a0-a8b9-fe8ba2981195",
+    "runId": "run-3ccd5b65-29a3-49b6-ae2b-60f2e0c98fae",
+    "purpose": "build"
+  },
+  "localRequestId": "query-afa0db58-0cc4-47f7-858f-3e03f78aa82a",
+  "request": {
+    "match": "fuzzy",
+    "sort": "score",
+    "limit": "10",
+    "query": "flour machinery pulverizer crusher mixer filling machine",
+    "industry": "industrial machinery"
+  },
+  "at": "2026-11-16T09:17:13.603Z",
+  "status": 200,
+  "response": {
+    "total": 0,
+    "limit": 10,
+    "items": [],
+    "meta": {
+      "searchVersion": "fuzzy-v2",
+      "normalizedIndustry": "机械设备与工业自动化",
+      "normalizedRegion": null,
+      "normalizedSort": "score-desc",
+      "concepts": [
+        "flour",
+        "pulverizer",
+        "crusher",
+        "mixer",
+        "filling"
+      ],
+      "rawTerms": [
+        "flour",
+        "pulverizer",
+        "crusher",
+        "mixer",
+        "filling"
+      ],
+      "ignoredGenericTerms": true,
+      "matchDetails": [],
+      "experimental": true,
+      "requestId": "query-afa0db58-0cc4-47f7-858f-3e03f78aa82a",
+      "traceStatus": "recorded",
+      "responseHash": "9f63b0b12256dcb9bb3d863fe2a86926462c1e1d9b1f0c0987f7951ce2db017d",
+      "contextStatus": "linked",
+      "transport": "mcp"
+    }
+  }
+}

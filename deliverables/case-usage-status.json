@@ -1,0 +1,42 @@
+{
+  "context": {
+    "projectId": "project-cdf38930-5f9d-42a0-a8b9-fe8ba2981195",
+    "runId": "run-3ccd5b65-29a3-49b6-ae2b-60f2e0c98fae",
+    "purpose": "build"
+  },
+  "scope": "current-run-only",
+  "otherRunIds": [],
+  "checkedAt": "2026-11-16T10:08:00.083Z",
+  "complete": false,
+  "issues": [
+    "DELIVERY_UNRECORDED"
+  ],
+  "pending": 0,
+  "failedQueryCount": 0,
+  "queries": [
+    {
+      "receiptPath": "D:\\Cursor\\Grand\\dulizhan\\xingyangglobal\\deliverables\\case-query-query-afa0db58-0cc4-47f7-858f-3e03f78aa82a.json",
+      "requestId": "query-afa0db58-0cc4-47f7-858f-3e03f78aa82a",
+      "request": {
+        "match": "fuzzy",
+        "sort": "score",
+        "limit": "10",
+        "query": "flour machinery pulverizer crusher mixer filling machine",
+        "industry": "industrial machinery"
+      },
+      "status": 200,
+      "traceStatus": "recorded",
+      "decision": "none",
+      "decisionSent": true,
+      "caseSlugs": [],
+      "reason": "No internal industrial-machinery case matched this customer's pulverizer, crusher, mixer and filling-machine scope; use the recorded public peer research only for information architecture, specification tables and RFQ patterns, without copying identity or claims.",
+      "externalReferences": [
+        "https://www.mill.com.tw/",
+        "https://www.pulverizer.co.in/",
+        "https://www.hmicronpowder.com/"
+      ]
+    }
+  ],
+  "deliveries": [],
+  "note": "Current run only; other runs are not certified. Adoption is agent-reported, not Owner acceptance or proven design improvement."
+}

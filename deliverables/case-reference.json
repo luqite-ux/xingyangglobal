@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-16T09:02:25.846Z",
+  "internalProjectId": "9595ce7a-d521-425d-a175-685681449318",
+  "internalSearchResult": "No reviewed internal cases returned; no case was selected.",
+  "publicReferences": [
+    {
+      "name": "Mill Powder Tech",
+      "pages": [
+        {
+          "url": "https://www.mill.com.tw/en/item/grains.html",
+          "type": "application and product-system page",
+          "observedAt": "2026-11-16T09:02:25.846Z"
+        },
+        {
+          "url": "https://www.mill.com.tw/en/category/index.html",
+          "type": "product catalogue entry",
+          "observedAt": "2026-11-16T09:02:25.846Z"
+        }
+      ],
+      "adopt": [
+        "Separate product family and application paths.",
+        "Use linked real category/detail routes and a clear Contact destination."
+      ],
+      "reject": [
+        "Do not copy the black hero treatment, dated visual style, truncated mobile heading, or its company facts."
+      ]
+    },
+    {
+      "name": "Premium Pulman",
+      "pages": [
+        {
+          "url": "https://pulverizer.co.in/",
+          "type": "manufacturer homepage and product catalogue",
+          "observedAt": "2026-11-16T09:02:25.846Z"
+        },
+        {
+          "url": "https://pulverizer.co.in/#pulverizers",
+          "type": "machine categories and material selection guide",
+          "observedAt": "2026-11-16T09:02:25.846Z"
+        }
+      ],
+      "adopt": [
+        "Material/application-led model selection.",
+        "Product-aware RFQ and structured specifications.",
+        "Manufacturing evidence immediately after the hero."
+      ],
+      "reject": [
+        "Do not copy its dark navy/orange visual system, unsupported metrics, WhatsApp promise, or overlapping mobile enquiry rail."
+      ]
+    },
+    {
+      "name": "Hosokawa Micron Powder Systems",
+      "pages": [
+        {
+          "url": "https://www.hmicronpowder.com/products/product/mikro-pulverizer-hammer-and-screen-mill/",
+          "type": "representative product detail",
+          "observedAt": "2026-11-16T09:02:25.846Z"
+        },
+        {
+          "url": "https://www.hmicronpowder.com/products/",
+          "type": "product/application catalogue entry",
+          "observedAt": "2026-11-16T09:02:25.846Z"
+        }
+      ],
+      "adopt": [
+        "Large factual product visual plus readable technical data.",
+        "Application and material lists as decision support.",
+        "Related resources only when real backend content exists."
+      ],
+      "reject": [
+        "Do not copy its brand, claims, consent UI, product facts, or dense unprioritized application list."
+      ]
+    }
+  ],
+  "customerSpecificDifference": "A light, non-black, editorial industrial site with all three real banners, selective Three.js flour-flow/process motion, complete product imagery, and no unsupported certificate/client/case claims."
+}

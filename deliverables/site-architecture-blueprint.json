@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "templateFamily": "industrial-machinery",
+  "navigation": [
+    {
+      "label": "Home",
+      "route": "/",
+      "level": 1,
+      "source": "Customer purchase path and verified site requirements",
+      "referencePeer": "hmicronpowder.com"
+    },
+    {
+      "label": "Products",
+      "route": "/products",
+      "level": 1,
+      "source": "Customer purchase path and verified site requirements",
+      "referencePeer": "hmicronpowder.com"
+    },
+    {
+      "label": "Applications",
+      "route": "/applications",
+      "level": 1,
+      "source": "Customer purchase path and verified site requirements",
+      "referencePeer": "mill.com.tw"
+    },
+    {
+      "label": "Manufacturing",
+      "route": "/manufacturing",
+      "level": 1,
+      "source": "Customer purchase path and verified site requirements",
+      "referencePeer": "pulverizer.co.in"
+    },
+    {
+      "label": "About",
+      "route": "/about",
+      "level": 1,
+      "source": "Customer purchase path and verified site requirements",
+      "referencePeer": "hmicronpowder.com"
+    },
+    {
+      "label": "News",
+      "route": "/news",
+      "level": 1,
+      "source": "Customer purchase path and verified site requirements",
+      "referencePeer": "hmicronpowder.com"
+    },
+    {
+      "label": "Contact",
+      "route": "/contact",
+      "level": 1,
+      "source": "Customer purchase path and verified site requirements",
+      "referencePeer": "hmicronpowder.com"
+    }
+  ],
+  "productTaxonomy": [
+    {
+      "customerProduct": "Multi-function Pulverizers",
+      "category": "Pulverizers",
+      "route": "/products?category=multi-function-pulverizers",
+      "source": "Customer product folders and Excel product scope"
+    },
+    {
+      "customerProduct": "Stainless Steel Pulverizers",
+      "category": "Pulverizers",
+      "route": "/products?category=stainless-steel-pulverizers",
+      "source": "Customer product folders and Excel product scope"
+    },
+    {
+      "customerProduct": "Wood Crushers",
+      "category": "Crushers",
+      "route": "/products?category=wood-crushers",
+      "source": "Customer product folders and Excel product scope"
+    },
+    {
+      "customerProduct": "Stainless Steel Mixers",
+      "category": "Mixers",
+      "route": "/products?category=stainless-steel-mixers",
+      "source": "Customer product folders and Excel product scope"
+    },
+    {
+      "customerProduct": "Fiber Filling Machines",
+      "category": "Filling Equipment",
+      "route": "/products?category=fiber-filling-machines",
+      "source": "Customer product folders and Excel product scope"
+    }
+  ],
+  "homepageSections": [
+    {
+      "sectionId": "hero",
+      "informationGain": "Identify machinery scope, legal supplier identity and the next selection action",
+      "type": "conversion",
+      "purpose": "Identify machinery scope, legal supplier identity and the next selection action",
+      "factSource": "Excel company/product scope and three supplied banners",
+      "contentType": "campaign carousel and live copy",
+      "desktopStrategy": "Full-bleed editorial hero with bounded flour-flow depth",
+      "mobile390Strategy": "Dedicated focal crop or copy-below-image composition",
+      "componentDecision": "Original Hero + Three.js progressive enhancement",
+      "referencePeers": [
+        "mill.com.tw",
+        "pulverizer.co.in",
+        "hmicronpowder.com"
+      ]
+    },
+    {
+      "sectionId": "product-families",
+      "informationGain": "Compare five verified equipment families on the same dimension",
+      "type": "catalogue",
+      "purpose": "Compare five verified equipment families on the same dimension",
+      "factSource": "Five product folders and representative images",
+      "contentType": "linked category cards",
+      "desktopStrategy": "Asymmetric machine-first grid with complete subjects",
+      "mobile390Strategy": "Single-column full-card touch targets",
+      "componentDecision": "Custom category grid; no library package matched",
+      "referencePeers": [
+        "mill.com.tw",
+        "pulverizer.co.in",
+        "hmicronpowder.com"
+      ]
+    },
+    {
+      "sectionId": "selection-guide",
+      "informationGain": "Explain selection by material, capacity, power, voltage and contact material",
+      "type": "selection",
+      "purpose": "Explain selection by material, capacity, power, voltage and contact material",
+      "factSource": "Customer parameter images",
+      "contentType": "structured comparison",
+      "desktopStrategy": "Readable table and comparison controls",
+      "mobile390Strategy": "Scroll-safe rows/cards without clipped values",
+      "componentDecision": "Custom responsive specification matrix",
+      "referencePeers": [
+        "mill.com.tw",
+        "pulverizer.co.in",
+        "hmicronpowder.com"
+      ]
+    },
+    {
+      "sectionId": "applications",
+      "informationGain": "Map verified agriculture, forestry and food scenarios to relevant equipment",
+      "type": "application",
+      "purpose": "Map verified agriculture, forestry and food scenarios to relevant equipment",
+      "factSource": "Excel applications and output images",
+      "contentType": "application pathway",
+      "desktopStrategy": "Three equal-dimension application panels",
+      "mobile390Strategy": "Stacked panels with direct category links",
+      "componentDecision": "Custom icon-assisted application pathway",
+      "referencePeers": [
+        "mill.com.tw",
+        "pulverizer.co.in",
+        "hmicronpowder.com"
+      ]
+    },
+    {
+      "sectionId": "manufacturing-proof",
+      "informationGain": "Provide verified facilities, line and monthly-capacity evidence for due diligence",
+      "type": "trust",
+      "purpose": "Provide verified facilities, line and monthly-capacity evidence for due diligence",
+      "factSource": "Excel company facts",
+      "contentType": "capability evidence",
+      "desktopStrategy": "Editorial evidence strip with semantic diagrams",
+      "mobile390Strategy": "Compact list with symbols and source-safe wording",
+      "componentDecision": "Custom capability evidence module",
+      "referencePeers": [
+        "mill.com.tw",
+        "pulverizer.co.in",
+        "hmicronpowder.com"
+      ]
+    },
+    {
+      "sectionId": "workflow",
+      "informationGain": "Clarify inquiry, technical confirmation, scheduling and inspection sequence",
+      "type": "process",
+      "purpose": "Clarify inquiry, technical confirmation, scheduling and inspection sequence",
+      "factSource": "Neutral order workflow derived from supported operations",
+      "contentType": "process diagram",
+      "desktopStrategy": "Animated bounded process path",
+      "mobile390Strategy": "Static/short-reveal vertical steps",
+      "componentDecision": "Custom SVG process path",
+      "referencePeers": [
+        "mill.com.tw",
+        "pulverizer.co.in",
+        "hmicronpowder.com"
+      ]
+    },
+    {
+      "sectionId": "quality-and-fit",
+      "informationGain": "Tell buyers what material/output inputs are needed to confirm suitability",
+      "type": "quality",
+      "purpose": "Tell buyers what material/output inputs are needed to confirm suitability",
+      "factSource": "Parameter tables and neutral inspection wording",
+      "contentType": "selection checklist",
+      "desktopStrategy": "Technical checklist with linked RFQ",
+      "mobile390Strategy": "Touch-friendly checklist and CTA",
+      "componentDecision": "Custom suitability checklist",
+      "referencePeers": [
+        "mill.com.tw",
+        "pulverizer.co.in",
+        "hmicronpowder.com"
+      ]
+    },
+    {
+      "sectionId": "about",
+      "informationGain": "Establish verified company name, founding year and location",
+      "type": "identity",
+      "purpose": "Establish verified company name, founding year and location",
+      "factSource": "Excel company facts",
+      "contentType": "editorial company profile",
+      "desktopStrategy": "Integrated image/text section without framed photo card",
+      "mobile390Strategy": "Image then concise identity copy",
+      "componentDecision": "Custom editorial split section",
+      "referencePeers": [
+        "mill.com.tw",
+        "pulverizer.co.in",
+        "hmicronpowder.com"
+      ]
+    },
+    {
+      "sectionId": "faq",
+      "informationGain": "Answer verified MOQ and practical model-selection preparation questions",
+      "type": "faq",
+      "purpose": "Answer verified MOQ and practical model-selection preparation questions",
+      "factSource": "Excel MOQ and verified selection variables",
+      "contentType": "accessible accordion",
+      "desktopStrategy": "Two-column question index and accordion",
+      "mobile390Strategy": "Single-column accordion",
+      "componentDecision": "Custom accessible accordion",
+      "referencePeers": [
+        "mill.com.tw",
+        "pulverizer.co.in",
+        "hmicronpowder.com"
+      ]
+    },
+    {
+      "sectionId": "final-rfq",
+      "informationGain": "Collect product, material, quantity and desired-output context",
+      "type": "contact",
+      "purpose": "Collect product, material, quantity and desired-output context",
+      "factSource": "Formal email and product context requirements",
+      "contentType": "RFQ entry",
+      "desktopStrategy": "Compact contextual form entry",
+      "mobile390Strategy": "Short direct form entry",
+      "componentDecision": "Custom RFQ panel",
+      "referencePeers": [
+        "mill.com.tw",
+        "pulverizer.co.in",
+        "hmicronpowder.com"
+      ]
+    }
+  ]
+}

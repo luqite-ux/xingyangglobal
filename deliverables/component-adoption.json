@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "sections": [
+    {
+      "sectionId": "hero",
+      "query": "hero industrial machinery campaign carousel and live copy",
+      "candidates": [],
+      "decision": "no-match",
+      "receipt": "anli_library project 9595ce7a-d521-425d-a175-685681449318 returned zero matching components on 2026-11-16; use an original bounded implementation and revalidate after source takeover."
+    },
+    {
+      "sectionId": "product-families",
+      "query": "product-families industrial machinery linked category cards",
+      "candidates": [],
+      "decision": "no-match",
+      "receipt": "anli_library project 9595ce7a-d521-425d-a175-685681449318 returned zero matching components on 2026-11-16; use an original bounded implementation and revalidate after source takeover."
+    },
+    {
+      "sectionId": "selection-guide",
+      "query": "selection-guide industrial machinery structured comparison",
+      "candidates": [],
+      "decision": "no-match",
+      "receipt": "anli_library project 9595ce7a-d521-425d-a175-685681449318 returned zero matching components on 2026-11-16; use an original bounded implementation and revalidate after source takeover."
+    },
+    {
+      "sectionId": "applications",
+      "query": "applications industrial machinery application pathway",
+      "candidates": [],
+      "decision": "no-match",
+      "receipt": "anli_library project 9595ce7a-d521-425d-a175-685681449318 returned zero matching components on 2026-11-16; use an original bounded implementation and revalidate after source takeover."
+    },
+    {
+      "sectionId": "manufacturing-proof",
+      "query": "manufacturing-proof industrial machinery capability evidence",
+      "candidates": [],
+      "decision": "no-match",
+      "receipt": "anli_library project 9595ce7a-d521-425d-a175-685681449318 returned zero matching components on 2026-11-16; use an original bounded implementation and revalidate after source takeover."
+    },
+    {
+      "sectionId": "workflow",
+      "query": "workflow industrial machinery process diagram",
+      "candidates": [],
+      "decision": "no-match",
+      "receipt": "anli_library project 9595ce7a-d521-425d-a175-685681449318 returned zero matching components on 2026-11-16; use an original bounded implementation and revalidate after source takeover."
+    },
+    {
+      "sectionId": "quality-and-fit",
+      "query": "quality-and-fit industrial machinery selection checklist",
+      "candidates": [],
+      "decision": "no-match",
+      "receipt": "anli_library project 9595ce7a-d521-425d-a175-685681449318 returned zero matching components on 2026-11-16; use an original bounded implementation and revalidate after source takeover."
+    },
+    {
+      "sectionId": "about",
+      "query": "about industrial machinery editorial company profile",
+      "candidates": [],
+      "decision": "no-match",
+      "receipt": "anli_library project 9595ce7a-d521-425d-a175-685681449318 returned zero matching components on 2026-11-16; use an original bounded implementation and revalidate after source takeover."
+    },
+    {
+      "sectionId": "faq",
+      "query": "faq industrial machinery accessible accordion",
+      "candidates": [],
+      "decision": "no-match",
+      "receipt": "anli_library project 9595ce7a-d521-425d-a175-685681449318 returned zero matching components on 2026-11-16; use an original bounded implementation and revalidate after source takeover."
+    },
+    {
+      "sectionId": "final-rfq",
+      "query": "final-rfq industrial machinery RFQ entry",
+      "candidates": [],
+      "decision": "no-match",
+      "receipt": "anli_library project 9595ce7a-d521-425d-a175-685681449318 returned zero matching components on 2026-11-16; use an original bounded implementation and revalidate after source takeover."
+    }
+  ]
+}

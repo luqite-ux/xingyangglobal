@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "queries": [
+    {
+      "query": "industrial machinery flour flow hero particles",
+      "at": "2026-11-16T10:07:43.756Z",
+      "catalogHash": "2d190f64d6275820fc8fb818f19c0f360155d8f4545790b900628e67c200afdd",
+      "ids": []
+    },
+    {
+      "query": "viewport reveal process schematic product specifications",
+      "at": "2026-11-16T10:07:54.579Z",
+      "catalogHash": "2d190f64d6275820fc8fb818f19c0f360155d8f4545790b900628e67c200afdd",
+      "ids": []
+    }
+  ],
+  "decision": "none",
+  "items": [],
+  "reason": "The motion catalog returned no matching production-ready component for either the customer-specific flour-flow Three.js hero or lifecycle-safe product/process reveals. Implement these bounded interactions directly from the approved motion plan, preserving reduced-motion and late-viewport-entry behavior."
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "banner_id": "banner-1",
+    "message_role": "manufacturer-and-equipment-scope",
+    "headline": "Grinding and Mixing Equipment Built Around Real Process Needs",
+    "supporting_copy": "Explore pulverizers, crushers, mixers and filling equipment, then share your material and target capacity for model selection.",
+    "evidence_refs": [
+      "Excel product scope",
+      "banner/1.jpg (customer-supplied campaign artwork; not evidence of an owned factory scene)"
+    ],
+    "primary_cta_label": "Explore Products",
+    "primary_cta_target": "/products"
+  },
+  {
+    "banner_id": "banner-2",
+    "message_role": "selection-and-order-workflow",
+    "headline": "Turn Material Requirements Into a Clear Equipment Plan",
+    "supporting_copy": "Compare verified model ranges, power options and throughput data before confirming an order-specific production plan.",
+    "evidence_refs": [
+      "Customer parameter images",
+      "banner/2.jpg (customer-supplied campaign artwork; not evidence of the customer's actual production line)"
+    ],
+    "primary_cta_label": "Compare Models",
+    "primary_cta_target": "/products"
+  },
+  {
+    "banner_id": "banner-3",
+    "message_role": "application-range-and-rfq",
+    "headline": "One Catalogue for Grinding, Crushing, Mixing and Filling Tasks",
+    "supporting_copy": "Match equipment to agriculture, forestry or food-processing applications and send your quantity, material and output requirements.",
+    "evidence_refs": [
+      "Excel applications: agriculture, forestry and food processing",
+      "Five supplied product families",
+      "banner/3.jpg (customer-supplied campaign artwork)"
+    ],
+    "primary_cta_label": "Request Model Guidance",
+    "primary_cta_target": "/contact?intent=model-selection"
+  }
+]

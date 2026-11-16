@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "customerIndustry": "Small and medium industrial grinding, crushing, mixing and fiber-filling machinery manufacturing",
+  "products": [
+    "Multi-function Pulverizers",
+    "Stainless Steel Pulverizers",
+    "Wood Crushers",
+    "Stainless Steel Mixers",
+    "Fiber Filling Machines"
+  ],
+  "targetBuyers": [
+    "Food and agricultural processors",
+    "Forestry and biomass processors",
+    "Small production plants and equipment distributors seeking model guidance"
+  ],
+  "peers": [
+    {
+      "url": "https://www.mill.com.tw/en/index.html",
+      "source": "web",
+      "normalizedDomain": "mill.com.tw",
+      "pagesReviewed": [
+        {
+          "kind": "home",
+          "url": "https://www.mill.com.tw/en/index.html",
+          "observation": "Homepage groups powder-processing systems by products and applications, with visible international navigation and contact routes.",
+          "checkedAt": "2026-11-16T09:10:25.242Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/mill-home-desktop.png",
+            "sha256": "f9429a03fc7183b137b16cd5b59775013c5c25f5193b4f0593ed7eaaa33c3507"
+          }
+        },
+        {
+          "kind": "navigation",
+          "url": "https://www.mill.com.tw/en/index.html",
+          "observation": "Desktop navigation exposes About, Products, Application, News, Download and Contact; 390px collapses to a hamburger while preserving brand and language.",
+          "checkedAt": "2026-11-16T09:10:25.242Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/mill-nav-mobile.png",
+            "sha256": "c66b7c05dcfb65035f55d204dc5483b2ca0c38f15431d093d35615805fba80d4"
+          }
+        },
+        {
+          "kind": "products",
+          "url": "https://www.mill.com.tw/en/item/grains.html",
+          "observation": "The grains application page connects material scenarios to real product/system detail links and a contact path.",
+          "checkedAt": "2026-11-16T09:10:25.242Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/mill-products-desktop.png",
+            "sha256": "de23fc4746af79058141b1bd907c8e8c23249241d9ae0c97712949d52fd107e8"
+          }
+        }
+      ],
+      "overseasEvidence": {
+        "country": "Taiwan",
+        "whyCompetitor": "English international manufacturer of grinding, mixing and powder-processing systems serving grain and food applications.",
+        "sourceUrl": "https://www.mill.com.tw/en/page/aboutus.html"
+      },
+      "homeSections": [
+        "hero",
+        "product/application entry",
+        "systems",
+        "company evidence",
+        "news",
+        "contact"
+      ],
+      "navigation": [
+        "About us",
+        "Products",
+        "Application",
+        "News",
+        "Download",
+        "Contact"
+      ],
+      "productTaxonomy": [
+        "application material",
+        "standalone machine",
+        "turnkey system"
+      ],
+      "adopt": [
+        "Dual product/application paths",
+        "Real linked category and detail destinations"
+      ],
+      "reject": [
+        "Black hero treatment",
+        "Truncated mobile heading",
+        "Peer facts and media"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.mill.com.tw/en/item/grains.html",
+          "observation": "Application-led organization and linked systems reduce catalogue ambiguity."
+        }
+      ]
+    },
+    {
+      "url": "https://pulverizer.co.in/",
+      "source": "web",
+      "normalizedDomain": "pulverizer.co.in",
+      "pagesReviewed": [
+        {
+          "kind": "home",
+          "url": "https://pulverizer.co.in/",
+          "observation": "Hero combines manufacturer identity, equipment scope, real machine imagery and quote actions, followed by evidence metrics.",
+          "checkedAt": "2026-11-16T09:10:25.242Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/premium-home-desktop.png",
+            "sha256": "d4c47d59fc8ef0e0a3902158876face18784e39f87ba59b90fcf2144978b78e9"
+          }
+        },
+        {
+          "kind": "navigation",
+          "url": "https://pulverizer.co.in/",
+          "observation": "Desktop navigation separates machines, industries, plants/solutions, resources and company; mobile collapses the menu but a vertical enquiry rail overlaps body copy.",
+          "checkedAt": "2026-11-16T09:10:25.242Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/premium-nav-mobile.png",
+            "sha256": "1f358178233fcd0e8c2021b034fe619dadc878728b3b5bba89d83f72ac834702"
+          }
+        },
+        {
+          "kind": "products",
+          "url": "https://pulverizer.co.in/",
+          "observation": "Product catalogue and a material-to-machine selection guide pair application, fineness and technical routes with detail links.",
+          "checkedAt": "2026-11-16T09:10:25.242Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/premium-products-desktop.png",
+            "sha256": "d4c47d59fc8ef0e0a3902158876face18784e39f87ba59b90fcf2144978b78e9"
+          }
+        }
+      ],
+      "overseasEvidence": {
+        "country": "India",
+        "whyCompetitor": "English export-oriented industrial pulverizer and powder-processing plant manufacturer.",
+        "sourceUrl": "https://pulverizer.co.in/"
+      },
+      "homeSections": [
+        "manufacturer hero",
+        "evidence metrics",
+        "machine catalogue",
+        "material selection guide",
+        "turnkey plants",
+        "industries",
+        "RFQ"
+      ],
+      "navigation": [
+        "Pulverizers",
+        "Industries",
+        "Plants & Solutions",
+        "Resources",
+        "Company",
+        "Get a Quote"
+      ],
+      "productTaxonomy": [
+        "machine technology",
+        "material/application",
+        "turnkey plant"
+      ],
+      "adopt": [
+        "Material-to-model selection guidance",
+        "Structured specifications and contextual RFQ",
+        "Manufacturer evidence near the hero"
+      ],
+      "reject": [
+        "Peer metrics and claims",
+        "Dark navy/orange identity",
+        "Overlapping mobile enquiry rail"
+      ],
+      "evidence": [
+        {
+          "url": "https://pulverizer.co.in/",
+          "observation": "Material and required output are treated as primary product-selection inputs."
+        }
+      ]
+    },
+    {
+      "url": "https://www.hmicronpowder.com/",
+      "source": "web",
+      "normalizedDomain": "hmicronpowder.com",
+      "pagesReviewed": [
+        {
+          "kind": "home",
+          "url": "https://www.hmicronpowder.com/",
+          "observation": "Homepage exposes applications, industries, services and technical resources as separate decision paths.",
+          "checkedAt": "2026-11-16T09:10:25.242Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/hosokawa-home-desktop.png",
+            "sha256": "a39587db18914607b139f924333ca448e9de38ec457a21dff13bf2500e9e86d9"
+          }
+        },
+        {
+          "kind": "navigation",
+          "url": "https://www.hmicronpowder.com/",
+          "observation": "Desktop navigation separates Applications, Industries, Services, About, Sustainability and Contact; mobile uses a labelled hamburger, but consent UI dominates the viewport.",
+          "checkedAt": "2026-11-16T09:10:25.242Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/hosokawa-nav-mobile.png",
+            "sha256": "721d221045bb935a6d962d05cd5a195fc91d402beeaa44d1b3cc9741093dfc51"
+          }
+        },
+        {
+          "kind": "products",
+          "url": "https://www.hmicronpowder.com/products/product/mikro-pulverizer-hammer-and-screen-mill/",
+          "observation": "Representative detail page pairs a large factual equipment visual with design/options, material applications and relevant resources.",
+          "checkedAt": "2026-11-16T09:10:25.242Z",
+          "evidence": {
+            "path": "deliverables/blueprint-evidence/hosokawa-products-desktop.png",
+            "sha256": "68c48873a740bd1a48db5f2dee1744f1d15430a5513f738e670d904a3744d739"
+          }
+        }
+      ],
+      "overseasEvidence": {
+        "country": "United States",
+        "whyCompetitor": "Industrial powder-processing manufacturer with detailed English product and application pages.",
+        "sourceUrl": "https://www.hmicronpowder.com/about/"
+      },
+      "homeSections": [
+        "applications",
+        "industries",
+        "products",
+        "services",
+        "resources",
+        "contact"
+      ],
+      "navigation": [
+        "Applications",
+        "Industries",
+        "Services",
+        "About",
+        "Sustainability",
+        "Contact"
+      ],
+      "productTaxonomy": [
+        "application",
+        "industry",
+        "equipment technology"
+      ],
+      "adopt": [
+        "Large factual product image with readable technical data",
+        "Application taxonomy and related technical resources when real content exists"
+      ],
+      "reject": [
+        "Peer product facts and media",
+        "Consent overlay that blocks mobile reading",
+        "Dense unprioritized application lists"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.hmicronpowder.com/products/product/mikro-pulverizer-hammer-and-screen-mill/",
+          "observation": "Technical options and applications support equipment evaluation on the detail page."
+        }
+      ]
+    }
+  ],
+  "caseIntake": [],
+  "internalLibrary": {
+    "projectId": "9595ce7a-d521-425d-a175-685681449318",
+    "result": "No cases or components returned; legacy company query returned MCP_WORKSPACE_SCOPE."
+  }
+}
