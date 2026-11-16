@@ -2,9 +2,9 @@ import type { SpecGroup } from '@/lib/products'
 
 export function SpecTables({ groups }: { groups: SpecGroup[] }) {
   return (
-    <div className="grid gap-10">
+    <div className="grid min-w-0 gap-10">
       {groups.map((group) => (
-        <section key={group.title} aria-label={group.title}>
+        <section key={group.title} className="min-w-0" aria-label={group.title}>
           <h3 className="font-display text-lg font-semibold text-ink">{group.title}</h3>
           {group.kind === 'pairs' ? (
             <dl className="mt-4 grid border-t border-ink/20 sm:grid-cols-2 sm:gap-x-10">

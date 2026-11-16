@@ -28,7 +28,10 @@ function overlay(row: ProductRow): Product | null {
   const images: ProductImage[] = urls.length
     ? urls.map((src, index) => ({ src, alt: `${row.name_i18n?.en || row.name || fallback.name.en} — image ${index + 1}`, kind: 'photo', caption: index === 0 ? 'Product image' : `Gallery image ${index + 1}` }))
     : fallback.images
-  const overview = row.overview_i18n?.en || row.overview
+  const overview = (row.overview_i18n?.en || row.overview)
+    ?.replace(/The supplied sheet lists/gi, 'The specification table lists')
+    .replace(/the supplied sheet/gi, 'the specification table')
+    .replace(/the supplied photo/gi, 'the product photo')
   return {
     ...fallback,
     name: { en: row.name_i18n?.en || row.name || fallback.name.en },

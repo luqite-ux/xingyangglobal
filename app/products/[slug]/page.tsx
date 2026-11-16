@@ -82,7 +82,7 @@ export default async function ProductDetailPage({ params }: Props) {
 
       <Section id="overview" labelledBy="overview-title" className="!border-t-0">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
-          <Reveal>
+          <Reveal className="min-w-0">
             <ProductGallery images={product.images} />
           </Reveal>
           <Reveal delay={1}>
@@ -125,7 +125,7 @@ export default async function ProductDetailPage({ params }: Props) {
           ) : null}
         </Reveal>
         {product.specs.length ? (
-          <Reveal className="mt-10" delay={1}>
+          <Reveal className="mt-10 min-w-0" delay={1}>
             <SpecTables groups={product.specs} />
           </Reveal>
         ) : null}
