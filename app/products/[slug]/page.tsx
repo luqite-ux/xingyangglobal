@@ -131,7 +131,7 @@ export default async function ProductDetailPage({ params }: Props) {
           </Reveal>
         ) : null}
         <Reveal delay={2}>
-          <ProductDocuments documents={product.documents} />
+          <ProductDocuments documents={product.documents} productSlug={product.slug} />
         </Reveal>
       </Section>
 

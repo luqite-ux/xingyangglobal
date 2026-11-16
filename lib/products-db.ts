@@ -35,11 +35,11 @@ const documentDefinitions: Record<string, DocumentDefinition[]> = {
   ],
   'wood-crusher-420': [
     { caption: 'Model parameters' },
+    { caption: 'Product instructions 1' },
+    { caption: 'Product instructions 2' },
     { caption: 'Crushing effect' },
-    { caption: 'Application range 1' },
-    { caption: 'Application range 2' },
-    { caption: 'Product instructions 1', width: 790, height: 808 },
-    { caption: 'Product instructions 2', width: 790, height: 699 },
+    { caption: 'Application range 1', width: 790, height: 808 },
+    { caption: 'Application range 2', width: 790, height: 699 },
   ],
   'stainless-steel-mixer-15-200': [
     { caption: 'Model parameters' },
