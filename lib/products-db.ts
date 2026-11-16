@@ -16,35 +16,37 @@ type ProductRow = {
   extra_data?: { images?: string[]; specs_pending?: boolean } | null
 }
 
-const documentLabels: Record<string, string[]> = {
+type DocumentDefinition = { caption: string; width?: number; height?: number }
+
+const documentDefinitions: Record<string, DocumentDefinition[]> = {
   'multi-function-pulverizer-360-1000': [
-    'Model parameters',
-    'Production efficiency',
-    'Grinding effect display',
-    'Operating instructions',
-    'Important notice',
-    'Suitable materials',
+    { caption: 'Model parameters' },
+    { caption: 'Production efficiency' },
+    { caption: 'Grinding effect display' },
+    { caption: 'Operating instructions' },
+    { caption: 'Important notice' },
+    { caption: 'Suitable materials' },
   ],
   'stainless-steel-pulverizer-360-1000': [
-    'Technical reference 1',
-    'Technical reference 2',
-    'Technical reference 3',
-    'Technical reference 4',
+    { caption: 'Product details 1' },
+    { caption: 'Product details 2' },
+    { caption: 'Product details 3' },
+    { caption: 'Product details 4' },
   ],
   'wood-crusher-420': [
-    'Model parameters',
-    'Crushing effect',
-    'Application range 1',
-    'Application range 2',
-    'Product instructions 1',
-    'Product instructions 2',
+    { caption: 'Model parameters' },
+    { caption: 'Crushing effect' },
+    { caption: 'Application range 1' },
+    { caption: 'Application range 2' },
+    { caption: 'Product instructions 1', width: 790, height: 808 },
+    { caption: 'Product instructions 2', width: 790, height: 699 },
   ],
   'stainless-steel-mixer-15-200': [
-    'Model parameters',
-    'Product uses',
-    'Customized model',
-    'Functional features',
-    'Application range',
+    { caption: 'Model parameters' },
+    { caption: 'Product uses' },
+    { caption: 'Customized model' },
+    { caption: 'Functional features' },
+    { caption: 'Application range' },
   ],
   'fiber-filling-machine': [],
 }
@@ -53,9 +55,9 @@ function overlay(row: ProductRow): Product | null {
   const fallback = fallbackProducts.find((product) => product.slug === row.slug)
   if (!fallback) return null
   const databaseUrls = row.extra_data?.images?.filter(Boolean) ?? (row.image_url ? [row.image_url] : [])
-  const labels = documentLabels[row.slug] ?? []
-  const documentUrls = databaseUrls.slice(0, labels.length)
-  const photoUrls = databaseUrls.slice(labels.length)
+  const definitions = documentDefinitions[row.slug] ?? []
+  const documentUrls = databaseUrls.slice(0, definitions.length)
+  const photoUrls = databaseUrls.slice(definitions.length)
   // Use the complete customer photo sequence when it exists. The local cover is only
   // a fallback; prepending it would duplicate the first customer product photograph.
   const urls = (photoUrls.length ? photoUrls : fallback.images.map((image) => image.src)).filter(
@@ -67,9 +69,11 @@ function overlay(row: ProductRow): Product | null {
   const documents: ProductImage[] = documentUrls.length
     ? documentUrls.map((src, index) => ({
         src,
-        alt: `${row.name_i18n?.en || row.name || fallback.name.en} — ${labels[index]}`,
+        alt: `${row.name_i18n?.en || row.name || fallback.name.en} — ${definitions[index].caption}`,
         kind: 'sheet',
-        caption: labels[index],
+        caption: definitions[index].caption,
+        width: definitions[index].width ?? 2000,
+        height: definitions[index].height ?? 2000,
       }))
     : fallback.documents
   const overview = (row.overview_i18n?.en || row.overview)

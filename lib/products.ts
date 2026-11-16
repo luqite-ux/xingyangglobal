@@ -15,6 +15,8 @@ export type ProductImage = {
   /** "sheet" images carry printed catalogue data; "photo" images show the machine itself. */
   kind: 'sheet' | 'photo'
   caption: string
+  width?: number
+  height?: number
 }
 
 export type SpecGroup =
@@ -51,7 +53,7 @@ export type Product = {
   selectionNotes: Localized<string[]>
 }
 
-const sheet = (src: string, alt: string, caption: string): ProductImage => ({ src, alt, kind: 'sheet', caption })
+const sheet = (src: string, alt: string, caption: string): ProductImage => ({ src, alt, kind: 'sheet', caption, width: 2000, height: 2000 })
 const photo = (src: string, alt: string, caption: string): ProductImage => ({ src, alt, kind: 'photo', caption })
 
 export const categories: Category[] = [
