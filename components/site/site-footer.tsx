@@ -17,9 +17,6 @@ export function SiteFooter() {
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
             {site.displayName}. Grinding, crushing, mixing and filling equipment, made in Gaocun, Xingyang since {site.founded}.
           </p>
-          <p lang="zh-Hans" className="mt-3 text-sm font-medium text-ink">
-            {site.legalNameZh}
-          </p>
           <address className="mt-6 grid gap-1 text-sm not-italic text-ink/85">
             <a href={`mailto:${site.email}`} className="inline-flex min-h-11 items-center gap-2.5 hover:text-ember-text">
               <Mail className="size-4 text-mineral" aria-hidden="true" />

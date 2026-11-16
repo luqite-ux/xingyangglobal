@@ -40,8 +40,7 @@ export default function AboutPage() {
           <Reveal className="lg:col-span-7" delay={1}>
             <dl className="grid border-t border-ink/20">
               {[
-                ['Registered name', site.legalNameZh],
-                ['English display name', site.displayName],
+                ['Company name', site.displayName],
                 ['Address', site.address],
                 ['Founded', String(site.founded)],
                 ['Minimum order', site.moq],

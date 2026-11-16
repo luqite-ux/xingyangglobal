@@ -1,6 +1,5 @@
 export const site = {
   url: 'https://xingyangglobal.com',
-  legalNameZh: '荥阳市面粉机械制造厂',
   displayName: 'Xingyang City Flour Machinery Manufacturing Factory',
   wordmark: { primary: 'XINGYANG', secondary: 'FLOUR MACHINERY' },
   email: 'info@xingyangglobal.com',

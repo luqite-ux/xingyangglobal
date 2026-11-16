@@ -24,12 +24,8 @@ export function AboutSection() {
         </Reveal>
         <Reveal as="dl" delay={1} className="grid gap-5 border-l-2 border-ember pl-6 md:col-span-5 md:col-start-8">
           <div>
-            <dt className="eyebrow !text-[0.68rem]">Legal name</dt>
-            <dd lang="zh-Hans" className="mt-1 font-display text-2xl font-semibold text-ink">{site.legalNameZh}</dd>
-          </div>
-          <div>
             <dt className="eyebrow !text-[0.68rem]">Company name</dt>
-            <dd className="mt-1 text-ink">{site.displayName}</dd>
+            <dd className="mt-1 font-display text-2xl font-semibold text-ink">{site.displayName}</dd>
           </div>
           <div>
             <dt className="eyebrow !text-[0.68rem]">Address</dt>

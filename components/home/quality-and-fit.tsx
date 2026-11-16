@@ -31,7 +31,12 @@ export function QualityAndFit() {
       <div className="mt-14 grid gap-12 lg:grid-cols-12">
         <ul className="grid gap-px bg-paper/20 sm:grid-cols-2 lg:col-span-7">
           {provide.map(({ icon: Icon, title, text }, index) => (
-            <Reveal as="li" key={title} delay={index % 2} className="bg-mineral p-6">
+            <Reveal
+              as="li"
+              key={title}
+              delay={index % 2}
+              className={`bg-mineral p-6 ${index === provide.length - 1 ? 'sm:col-span-2' : ''}`}
+            >
               <Icon className="size-6 text-flour" strokeWidth={1.5} aria-hidden="true" />
               <h3 className="mt-4 text-lg font-semibold text-paper">{title}</h3>
               <p className="mt-1 text-sm text-paper/80">{text}</p>
