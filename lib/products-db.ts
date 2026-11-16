@@ -56,9 +56,9 @@ function overlay(row: ProductRow): Product | null {
   const labels = documentLabels[row.slug] ?? []
   const documentUrls = databaseUrls.slice(0, labels.length)
   const photoUrls = databaseUrls.slice(labels.length)
-  // Keep a clear machine photograph as the lead image. Catalogue sheets remain in the
-  // gallery for reference, but database upload order must not turn one into the cover.
-  const urls = [fallback.images[0]?.src, ...photoUrls].filter(
+  // Use the complete customer photo sequence when it exists. The local cover is only
+  // a fallback; prepending it would duplicate the first customer product photograph.
+  const urls = (photoUrls.length ? photoUrls : fallback.images.map((image) => image.src)).filter(
     (src, index, all): src is string => Boolean(src) && all.indexOf(src) === index,
   )
   const images: ProductImage[] = urls.length
