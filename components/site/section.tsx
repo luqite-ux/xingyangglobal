@@ -44,7 +44,7 @@ export function SectionHeading({ id, index, eyebrow, title, intro, tone = 'paper
     <Reveal className={cn('max-w-4xl space-y-5', className)}>
       <div>
         <p className={cn('eyebrow flex items-center gap-3', tone === 'mineral' && '!text-paper/80')}>
-          {index ? <span className="text-ember tabular-nums">{index}</span> : null}
+          {index ? <span className={cn('tabular-nums', tone === 'mineral' ? 'text-[#ffbd82]' : 'text-ember')}>{index}</span> : null}
           <span aria-hidden="true" className="h-px w-8 bg-current opacity-40" />
           {eyebrow}
         </p>
