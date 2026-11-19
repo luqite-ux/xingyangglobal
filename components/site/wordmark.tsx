@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import { site } from '@/lib/site'
 
@@ -8,15 +9,9 @@ export function Wordmark({ className, onNavigate }: { className?: string; onNavi
       href="/"
       onClick={onNavigate}
       aria-label={`${site.displayName} — home`}
-      className={cn('group inline-flex min-h-11 items-center gap-2.5 font-display', className)}
+      className={cn('group inline-flex min-h-11 items-center font-display', className)}
     >
-      <span className="text-[1.05rem] font-extrabold tracking-[0.2em] text-ink transition-colors group-hover:text-mineral">
-        {site.wordmark.primary}
-      </span>
-      <span aria-hidden="true" className="text-lg font-light text-ember">
-        /
-      </span>
-      <span className="text-[0.68rem] font-semibold tracking-[0.22em] text-mineral">{site.wordmark.secondary}</span>
+      <Image src="/images/brand/xingyang-mill-logo.png" alt="Xingyang Mill" width={555} height={532} className="h-16 w-auto object-contain mix-blend-multiply md:h-[4.5rem]" priority />
     </Link>
   )
 }

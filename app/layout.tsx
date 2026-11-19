@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description:
     'Xingyang City Flour Machinery Manufacturing Factory builds multi-function and stainless steel pulverizers, wood crushers, stainless steel mixers and fiber filling machines. Founded 2002, Gaocun, Xingyang, Henan, China.',
   applicationName: 'Xingyang Flour Machinery',
-  icons: { icon: [{ url: '/icon.svg', type: 'image/svg+xml' }] },
+  icons: { icon: [{ url: '/images/brand/xingyang-mill-logo.png', type: 'image/png' }] },
 }
 
 export const viewport: Viewport = {
@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             '@id': `${site.url}/#organization`,
             name: site.displayName,
             url: site.url,
-            logo: `${site.url}/icon.svg`,
+            logo: `${site.url}/images/brand/xingyang-mill-logo.png`,
             email: site.email,
             telephone: site.phone,
             address: { '@type': 'PostalAddress', addressLocality: 'Xingyang', addressRegion: 'Henan', addressCountry: 'CN' },

@@ -13,7 +13,7 @@ type SectionProps = {
 const tones = {
   paper: 'bg-paper text-ink',
   deep: 'bg-paper-deep text-ink',
-  mineral: 'bg-mineral text-paper',
+  mineral: 'bg-[#454b53] text-paper',
 } as const
 
 export function Section({ id, labelledBy, tone = 'paper', className, children }: SectionProps) {
@@ -41,15 +41,15 @@ type SectionHeadingProps = {
 
 export function SectionHeading({ id, index, eyebrow, title, intro, tone = 'paper', as: Tag = 'h2', className }: SectionHeadingProps) {
   return (
-    <Reveal className={cn('grid gap-6 md:grid-cols-12 md:gap-10', className)}>
-      <div className="md:col-span-4">
+    <Reveal className={cn('max-w-4xl space-y-5', className)}>
+      <div>
         <p className={cn('eyebrow flex items-center gap-3', tone === 'mineral' && '!text-paper/80')}>
           {index ? <span className="text-ember tabular-nums">{index}</span> : null}
           <span aria-hidden="true" className="h-px w-8 bg-current opacity-40" />
           {eyebrow}
         </p>
       </div>
-      <div className="md:col-span-8">
+      <div>
         <Tag id={`${id}-title`} className="text-[clamp(1.9rem,3.6vw,3.25rem)] font-semibold leading-[1.04]">
           {title}
         </Tag>

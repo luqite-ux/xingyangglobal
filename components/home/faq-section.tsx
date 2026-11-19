@@ -1,18 +1,13 @@
 import { faqs } from '@/lib/faq'
 import { localize } from '@/lib/i18n'
-import { Section } from '@/components/site/section'
+import { Section, SectionHeading } from '@/components/site/section'
 import { Reveal } from '@/components/site/reveal'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 
 export function FaqSection() {
   return (
     <Section id="faq" tone="deep">
-      <Reveal className="max-w-4xl">
-        <p className="eyebrow">FAQ</p>
-        <h2 id="faq-title" className="mt-5 text-[clamp(2rem,4vw,3.5rem)] font-semibold leading-[1.04]">
-          Practical questions before you inquire
-        </h2>
-      </Reveal>
+      <SectionHeading id="faq" index="08" eyebrow="FAQ" title="Practical questions before you inquire" />
       <Reveal className="mt-10">
         <Accordion type="single" collapsible className="border-t border-ink/25">
           {faqs.map((item) => (

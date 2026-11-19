@@ -1,20 +1,15 @@
 import { Mail, Phone } from 'lucide-react'
 import { site } from '@/lib/site'
-import { Section } from '@/components/site/section'
+import { Section, SectionHeading } from '@/components/site/section'
 import { Reveal } from '@/components/site/reveal'
 import { ButtonLink } from '@/components/site/button-link'
 
 export function FinalRfq() {
   return (
     <Section id="final-rfq" className="overflow-hidden">
-      <div className="grid gap-10 md:grid-cols-12 md:items-end">
+      <SectionHeading id="final-rfq" index="09" eyebrow="Request a quote" title="Tell us what you process — we will help select the machine." />
+      <div className="mt-8 grid gap-10 md:grid-cols-12 md:items-end">
         <Reveal className="md:col-span-7">
-          <p className="eyebrow">
-            <span className="text-ember tabular-nums">09</span> &nbsp; Request a quote
-          </p>
-          <h2 id="final-rfq-title" className="mt-4 text-[clamp(2rem,4.4vw,3.75rem)] font-semibold leading-[1.02]">
-            Tell us what you process — we will help select the machine.
-          </h2>
           <p className="mt-5 max-w-xl text-lg text-muted-foreground">
             Minimum order is one machine. Share the material, target output and power supply to receive a model recommendation.
           </p>

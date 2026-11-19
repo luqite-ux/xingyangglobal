@@ -66,7 +66,7 @@ export function SiteHeader() {
         scrolled ? 'border-ink/15 shadow-[0_8px_24px_-18px_rgba(18,48,63,0.5)]' : 'border-ink/10',
       )}
     >
-      <div className="container-wide flex h-16 items-center justify-between gap-4">
+      <div className="container-wide flex h-20 items-center justify-between gap-4">
         <Wordmark onNavigate={() => setMobileOpen(false)} />
 
         <nav aria-label="Primary" className="hidden items-center lg:flex">

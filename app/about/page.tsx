@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { buildMetadata } from '@/lib/metadata'
 import { site } from '@/lib/site'
 import { categories } from '@/lib/products'
@@ -7,6 +8,7 @@ import { PageHero } from '@/components/site/page-hero'
 import { Section } from '@/components/site/section'
 import { Reveal } from '@/components/site/reveal'
 import { ButtonLink } from '@/components/site/button-link'
+import { CategoryIcon } from '@/components/site/category-icon'
 
 export const metadata: Metadata = buildMetadata({
   title: 'About Xingyang | Flour and Processing Machinery Manufacturer',
@@ -36,6 +38,10 @@ export default function AboutPage() {
             <p className="mt-4 text-muted-foreground">
               Xingyang City Flour Machinery Manufacturing Factory has produced grinding, crushing, mixing and filling equipment in Gaocun, Xingyang since 2002.
             </p>
+            <figure className="mt-8 overflow-hidden border border-ink/10 bg-paper-deep">
+              <Image src="/images/factory/workshop-stainless-machines.jpg" alt="Xingyang Mill stainless equipment workshop" width={1200} height={800} className="aspect-[4/3] w-full object-cover" />
+              <figcaption className="px-4 py-3 text-xs uppercase tracking-[0.12em] text-muted-foreground">Stainless equipment workshop</figcaption>
+            </figure>
           </Reveal>
           <Reveal className="lg:col-span-7" delay={1}>
             <dl className="grid border-t border-ink/20">
@@ -63,11 +69,12 @@ export default function AboutPage() {
             What we make
           </h2>
         </Reveal>
-        <ul className="mt-10 grid border-t border-ink/20 md:grid-cols-2 md:gap-x-12">
+        <ul className="mt-10 grid gap-3 md:grid-cols-2">
           {categories.map((category, index) => (
-            <Reveal as="li" key={category.slug} delay={index % 2} className="border-b border-ink/10 py-5">
-              <h3 className="font-display text-lg font-semibold">{localize(category.name)}</h3>
-              <p className="mt-1 text-sm text-muted-foreground">{localize(category.tagline)}</p>
+            <Reveal as="li" key={category.slug} delay={index % 2} className="flex gap-5 border border-ink/15 bg-paper p-5 transition-colors hover:border-ember/60">
+              <CategoryIcon slug={category.slug} className="mt-1 size-8 shrink-0 text-ember-text" />
+              <div><h3 className="font-display text-lg font-semibold">{localize(category.name)}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">{localize(category.tagline)}</p></div>
             </Reveal>
           ))}
         </ul>

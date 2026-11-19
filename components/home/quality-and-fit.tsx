@@ -35,7 +35,7 @@ export function QualityAndFit() {
               as="li"
               key={title}
               delay={index % 2}
-              className={`bg-mineral p-6 ${index === provide.length - 1 ? 'sm:col-span-2' : ''}`}
+              className={`bg-[#454b53] p-6 ${index === provide.length - 1 ? 'sm:col-span-2' : ''}`}
             >
               <Icon className="size-6 text-flour" strokeWidth={1.5} aria-hidden="true" />
               <h3 className="mt-4 text-lg font-semibold text-paper">{title}</h3>
