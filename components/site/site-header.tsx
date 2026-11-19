@@ -23,8 +23,11 @@ export function SiteHeader() {
   const menuRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    setMobileOpen(false)
-    setMenuOpen(false)
+    const frame = window.requestAnimationFrame(() => {
+      setMobileOpen(false)
+      setMenuOpen(false)
+    })
+    return () => window.cancelAnimationFrame(frame)
   }, [pathname])
 
   useEffect(() => {

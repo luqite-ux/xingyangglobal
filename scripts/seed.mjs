@@ -30,9 +30,9 @@ function readCatalogue() {
   const filename = path.join(root, 'lib', 'products.ts')
   const source = readFileSync(filename, 'utf8').replace(/^import .*?\r?\n/, "const l=(en)=>({en}); const localize=(value)=>value.en;\n")
   const output = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText
-  const module = { exports: {} }
-  new Function('exports', 'module', 'require', output)(module.exports, module, createRequire(import.meta.url))
-  return module.exports
+  const compiledModule = { exports: {} }
+  new Function('exports', 'module', 'require', output)(compiledModule.exports, compiledModule, createRequire(import.meta.url))
+  return compiledModule.exports
 }
 
 function imageFiles(directory) {
